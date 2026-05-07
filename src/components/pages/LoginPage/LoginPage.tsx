@@ -2,13 +2,20 @@ import bgOffice from "../../../assets/bg-office.jpg";
 import { EnvelopeIcon, EyeSlashIcon, LockClosedIcon } from "@heroicons/react/16/solid";
 import { EyeIcon } from "@heroicons/react/24/outline/esm/index";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function LoginPage() {
   const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate();
 
   const toggleShowPassword = () => {
     setShowPassword((prev) => !prev);
   };
+
+  const onSubmit = () => {
+    naviga;
+  };
+
   return (
     <div className="min-h-screen bg-center flex items-center justify-center" style={{ backgroundImage: `url(${bgOffice})` }}>
       <div
