@@ -1,12 +1,8 @@
 import "./App.css";
-import LoginPage from "./components/pages/LoginPage/LoginPage";
+import AppRoutes from "./routes/AppRoutes";
 
 function App() {
-  return (
-    <>
-      <LoginPage />
-    </>
-  );
+  return <AppRoutes />;
 }
 
 export default App;
