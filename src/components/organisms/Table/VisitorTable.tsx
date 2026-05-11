@@ -1,6 +1,6 @@
 import { recentVisits } from "../../../data/dashboard/recentVisits";
 
-function DashboardTable() {
+function VisitorTable() {
   const data = recentVisits;
   return (
     <div
@@ -63,4 +63,4 @@ function DashboardTable() {
   );
 }
 
-export default DashboardTable;
+export default VisitorTable;

@@ -25,7 +25,7 @@ function Sidebar({ isOpen, setIsOpen }: Props) {
         </div>
         <nav className="space-y-2 px-3 py-4">
           {menus.map((menu) => (
-            <NavLink key={menu.path} to={menu.path} className="block px-4 py-2 rounded-b-lg transition">
+            <NavLink key={menu.path} to={menu.path} className={({ isActive }) => `block px-4 py-2 rounded-lg transition ${isActive ? "bg-blue-950/10 text-white backdrop-blur-lg shadow-2xl transform transition-transform" : ""}`}>
               <div className="flex items-center">
                 <img src={menu.icon} alt={menu.name} className="w-6 h-6 p-1 mr-3 bg-white rounded-lg" />
                 <p className="text-md text-white">{menu.name}</p>
